@@ -1,5 +1,6 @@
 #![feature(new_uninit)]
 #![feature(const_fn)]
+#![feature(const_fn_trait_bound)]
 
 use heapless::String as HeaplessString;
 pub use heapless::{consts, ArrayLength, FnvIndexMap, Vec as HeaplessVec};
