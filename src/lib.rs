@@ -104,8 +104,7 @@ where
                     Some(x) => {
                         use std::fmt::Write;
                         write!(&mut symbol_buf, "{}", x).ok();
-                        write!(&mut symbol_buf, "; {:?}", symbol.addr()).ok();
-                        write!(&mut symbol_buf, "; {:?}", symbol.filename_raw()).ok();
+                        write!(&mut symbol_buf, "; {:?}", symbol.filename()).ok();
                         write!(&mut symbol_buf, "; {:?}", symbol.lineno()).ok();
                         got = true;
                     }
